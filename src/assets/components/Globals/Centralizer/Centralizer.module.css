@@ -1,0 +1,13 @@
+.Centralizer_Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.Centralizer_Container > * {
+width: 100%;
+
+}

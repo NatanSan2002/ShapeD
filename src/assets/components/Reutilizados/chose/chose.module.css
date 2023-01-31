@@ -1,0 +1,157 @@
+.Chose_Container {
+    color: white;
+    padding: 5px 0 33px 0;
+    position: relative;
+    overflow: hidden;
+    background: black;
+
+}
+.Chose_Container >.line {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 60px;
+    margin-bottom: 12px;
+    flex-wrap: nowrap;
+
+}
+
+.Chose_Container >.line .l {
+    height: 1px;
+    background: var(--color1);
+    width: 30%;
+}
+
+.Chose_Container > .line>h1 {
+    font-size: 1.875em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    display: block;
+}
+
+.Chose_Container>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Chose_Container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    width: 23.8%;
+    padding: 0 0.50%;
+    background: #00a9e2;
+    min-height: 55px;
+
+    font-size: 1em;
+    font-family: var(--font2);
+    font-weight: 600;
+    color: white;
+    letter-spacing: 0.8px;
+    transition-duration: 0.4s;
+
+}
+
+.Chose_Container a:hover{
+background:var(--color3);
+transition-duration: 0.4s;
+}
+
+
+.Chose_Container > .destaque{
+    align-items: flex-end;
+    flex-direction: row;
+}
+
+.Chose_Container > .destaque > div {
+margin-bottom: 16px;
+}
+.Chose_Container div > img{
+width: 270px;
+}
+
+.Chose_Container div > p {
+max-width: 798px;
+font-size:0.9375em;
+line-height: 1.42857143;
+background: black;
+padding:  5px;
+}
+
+.Chose_Container div > button{
+    margin-top: 39px;
+    padding: 14px 25px;
+    font-size: 20px;
+    font-family: var(--mainfont);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: #255778;
+
+}
+
+.Chose_Container > * {
+z-index: 1;
+position: relative;
+}
+.Chose_Container .bckg {
+width: 129%;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-39%,-50%);
+z-index:0;
+height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+@media(max-width:708px) {
+    .Chose_Container>div {
+        flex-direction: column;
+    }
+
+    .Chose_Container a {
+        width: 96%;
+        padding: 0 2%;
+        margin-bottom: 2px;
+    }
+}
+
+@media(max-width:1098px){
+    .Chose_Container > .destaque{
+       justify-content: center;
+       text-align: center;
+       
+    }
+
+
+
+    .Chose_Container div > p {
+        padding: 5px 7%;
+    }
+
+    .Chose_Container > .destaque > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .Chose_Container div > img{
+    margin-bottom: 21px;
+    }
+}

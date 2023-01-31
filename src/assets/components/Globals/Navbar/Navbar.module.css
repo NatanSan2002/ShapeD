@@ -1,0 +1,268 @@
+.Navbar_Container {
+    background: var(--maincolor);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+
+
+.Navbar_Container .content {
+    display: flex;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Navbar_Container .content>div {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+
+}
+
+
+.Navbar_Container a {
+    transition: 0.3s;
+}
+
+.Navbar_Container a:hover {
+    color: var(--color3);
+    transition: 0.3s;
+}
+
+.Navbar_Container .content>.canto {
+    margin: 0 0 0 auto;
+    padding: 7px 0;
+    width: auto;
+    max-width: none;
+}
+
+
+.Navbar_Container .content .ball {
+    margin: 0 5px;
+}
+
+.Navbar_Container .content>img {
+    width: 175px;
+}
+
+.Navbar_Container .content .itens_car {
+    width: auto;
+    max-width: none;
+    align-items: center;
+}
+
+.Navbar_Container .itens_car img {
+    width: 28px;
+}
+
+.Navbar_Container .itens_car p {
+    width: 70px;
+    color: #545454;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.Navbar_Container .itens_car h6 {
+    margin: 0 12px;
+    font-size: 30px;
+    font-weight: normal;
+    color: var(--color1);
+}
+
+.Navbar_Container .menu {
+
+    margin-top: 10px;
+    background: var(--color1);
+}
+
+.Navbar_Container .menu>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Navbar_Container .menu .content>a {
+    color: white;
+    font-family: var(--mainfont);
+    font-weight: 600;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    position: relative;
+    padding: 16px 0;
+}
+
+.Navbar_Container .menu .content>a>div {
+    position: absolute;
+    top: 48px;
+    left: -9px;
+    display: none;
+}
+
+.Navbar_Container .menu .content>a:hover>div {
+    display: flex;
+    animation: appear 0.3s;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.Navbar_Container .content .menu_icon {
+    width: 55px;
+    margin-left: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.Navbar_Container .menu > img {
+    width: 40px;
+    background: rgba(0, 0, 0, 0.767);
+    position: absolute;
+    top: 28px;
+    left: 88%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+
+
+.Navbar_Container .menu a:hover {
+    color: var(--color3);
+}
+
+.Navbar_Container .menu a img {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(74deg) brightness(104%) contrast(101%);
+    width: 14px;
+    margin-left: 1px;
+}
+
+
+.Navbar_Container .logo_mobile{
+display: none;
+}
+
+@media(max-width:1090px) {
+    .Navbar_Container .content .menu_icon {
+        display: inline-block;
+    }
+    .Navbar_Container .menu > img{
+        display:inline-block;
+    }
+
+    .Navbar_Container .menu {
+        display: none;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 300px;
+        height: 100vh;
+        margin: 0;
+        animation:  enter 0.4s;
+
+
+    }
+
+    @keyframes enter{
+    from{
+    transform: translate(-100%,0%);
+    }
+    }
+
+    .Navbar_Container .menu>.content {
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 3vh 0;
+        height: 94vh;
+    }
+
+    .Navbar_Container .menu .content>a {
+        padding: 1.5vh 0;
+        width: 50%;
+        background:var(--color2);
+        border-radius: 20px;
+        justify-content: center;
+
+    }
+
+    .Navbar_Container .menu a img {
+        display: none;
+    }
+
+    .Navbar_Container .menu .content>a:hover>div {
+        display: none;
+    }
+}
+
+@media(max-width:872px){
+    .Navbar_Container .content>img {
+        width: 143px;
+    }
+
+    .Navbar_Container .content>div {
+        margin: 0 10px;
+        margin-bottom: 4px;
+    }
+}
+
+@media(max-width:612px){
+
+    .Navbar_Container .content>img {
+    display: none;
+    }
+    .Navbar_Container .content  .logo_mobile{
+    width: 143px;
+    display: inline-block;
+    margin-left: 49px;;  
+}
+
+    .Navbar_Container .content .menu_icon{
+        margin-left: 6px;
+    }
+
+    .Navbar_Container .content>.canto{
+        margin: 0;
+        flex-direction: column;
+    }
+   
+    .Navbar_Container .content input,  .Navbar_Container .content button{
+        padding: 2px 8px;
+    }
+    
+    .Navbar_Container .content>div {
+        margin-bottom: 1px;
+    }
+    
+}
+
+@media(max-width:472px){
+    .Navbar_Container .content .itens_car > h6,.Navbar_Container .content .itens_car > p{
+    display:  none;
+    }
+}
+
+
+@media(max-width:412px){
+    .Navbar_Container .content  .logo_mobile{
+    margin-left: 26px;
+    margin-right: 8px;
+}
+
+.Navbar_Container .content .menu_icon{
+    margin-left: 0px;
+}
+}

@@ -1,0 +1,135 @@
+.Iten_Container {
+background: var(--maincolor);
+width: 200px;
+padding: 11px;
+margin: 0 6px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+position: relative;
+}
+
+.Iten_Container > .promo{
+    background: var(--color1);
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4.5px 9px 5.9px;
+    text-transform: uppercase;
+
+
+position: absolute;
+top: 4.5%;
+left: 76%;
+transform: translate(-50%,-50%);
+z-index: 1;
+}
+
+.Iten_Container > img {
+width: 100%;
+}
+
+.Iten_Container span {
+    width: 100%;
+max-width: 180px;
+font-size: 1em;
+min-height: 57px;
+margin: 5px 0 ;
+color: #535353;
+}
+
+.Iten_Container .price {
+display: flex;
+flex-direction: column;
+align-items: center;
+color: var(--color2);
+font-size:18px;
+font-weight: 600;
+min-height: 42px;
+margin: 10px 0;
+
+}
+
+.Iten_Container .price span{
+font-size:13px;
+font-weight: 400;
+width: auto;
+min-height:auto;
+margin-bottom: 0;
+color: var(--color3);
+}
+
+.Iten_Container .line{
+width:100%;
+height: 1px;
+background: #535353;
+margin-bottom: 10px;
+}
+
+.Iten_Container .a_vista{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.Iten_Container .a_vista span {
+min-height: auto;
+width: auto;
+font-size: 12px;
+margin:0;
+}
+
+.Iten_Container .a_vista > div{
+display: flex;
+flex-direction: column;
+}
+
+.Iten_Container .a_vista > div >div {
+display: flex;
+}
+
+.Iten_Container .a_vista p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #535353;
+}
+
+
+.Iten_Container .a_vista .desconto{
+color: #00A9E2;
+margin-right: 4px;
+}
+
+.Iten_Container .a_vista .final_value{
+    font-size: 24px;
+    color: #85b200;
+    max-width: 83px;
+}
+
+.Iten_Container .a_vista .ocult{
+display: inline-block;
+opacity: 0;
+}
+
+.Iten_Container button{
+width: 100%;
+margin-top: 12px;
+}
+
+@media(max-width:418px){
+    .Iten_Container span{
+    font-size: 17px;
+    }
+
+    .Iten_Container .price{
+    font-size: 22px;
+    }
+    .Iten_Container .a_vista .final_value{
+        max-width:none;
+        font-size: 29px;
+    }
+}

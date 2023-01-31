@@ -1,0 +1,93 @@
+.Fretes_Container {
+    padding: 31px 0;
+}
+
+.Fretes_Container .fretes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.Fretes_Container .fretes>div {
+    width: 215px;
+    padding: 22px 21px 0;
+    background: var(--color2);
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+    min-height: 120.56px;
+}
+
+.Fretes_Container .fretes>.par {
+    background: var(--maincolor);
+    color: var(--color1);
+}
+
+.Fretes_Container .fretes>div p {
+    color: var(--color1);
+    font-size: 1.4375em;
+    width: 121px;
+    text-align: left;
+    display: block;
+}
+
+.Fretes_Container .fretes .par p,
+.Fretes_Container .fretes .par span {
+    color: black;
+}
+
+.Fretes_Container .fretes>div h6 {
+    font-size: 1.875em;
+    margin-top: 8.2px;
+    display: block;
+}
+
+.Fretes_Container .fretes>div span {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    text-transform: none;
+}
+
+
+
+.Fretes_Container .fretes img {
+    width: 78px;
+    filter: invert(100%) sepia(100%) saturate(8%) hue-rotate(170deg) brightness(102%) contrast(104%);
+}
+
+.Fretes_Container .fretes .par img {
+    filter: invert(50%) sepia(42%) saturate(3144%) hue-rotate(152deg) brightness(97%) contrast(101%);
+}
+
+.Fretes_Container .fretes .vertical {
+    width: auto;
+    height: 56.38px;
+}
+
+.Fretes_Container .fretes>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:1058px){
+    .Fretes_Container .fretes{
+    justify-content: center;
+    }
+
+    .Fretes_Container .fretes>div{
+    margin: 0 10px;
+    margin-bottom: 5px;
+    }
+}
+
+@media(max-width:583px){
+    .Fretes_Container .fretes>div{
+    width: 100vw;
+    padding: 22px 5px 0;
+    }
+}

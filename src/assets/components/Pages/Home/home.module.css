@@ -1,0 +1,9 @@
+.Home_Container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.Home_Container > *{
+width: 100%;
+}

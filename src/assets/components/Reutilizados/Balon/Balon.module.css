@@ -1,0 +1,72 @@
+.Balon_Container{
+background:white;
+display: flex;
+flex-direction: column;
+width: 290px;
+padding: 5px;
+position: relative;
+border-radius: 0px 0px 5px 5px;
+z-index: 10;
+}
+
+.Balon_Container  *{
+font-size: 14px;
+font-weight: normal;
+font-style: italic;
+text-transform: uppercase;
+color:#00a9e2;
+line-height: 25px;
+padding:3px 5px;
+border: none;
+border-bottom: 1px solid rgba(0, 0, 0, 0.137);
+transition: 0.6s;
+}
+
+.Balon_Container  *:hover{
+transform:translate(4px,0px);
+transition: 0.6s;
+}
+
+.Balon_Container > .border{
+    position: absolute;
+    top: 99.2%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 3px;
+    width: 300px;
+    padding: 0 0px;
+    background: var(--color1);
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+.Balon_Container > .triangule{
+position: absolute;
+bottom: 100%;
+    left: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    pointer-events: none;
+    border-color: rgba(242, 242, 242, 0);
+    border-bottom-color: #f2f2f2;
+    border-width: 10px;
+    margin-left: -20px;
+    padding: 0;
+}
+
+/* triangule up:{
+    bottom: 100%;
+    left: 20%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(242, 242, 242, 0);
+    border-bottom-color: #f2f2f2;
+    border-width: 10px;
+    margin-left: -20px;
+}*/
